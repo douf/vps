@@ -1,13 +1,19 @@
-# ebesucher挂机一键脚本
-查看完整挂机方案（小白傻瓜化教程）：https://idream.moe/archives/295
+DailyMotionUpload
+Bash script to upload videos to DailyMotion from command line, very simple to use.
 
-debian系请在控制台中输入：
-wget https://raw.githubusercontent.com/5aimiku/ebesucher/master/eBesucher.sh;sh eBesucher.sh
-即可安装全套所需软件
+###Usage
 
-注：安装过程中，安装到Java和Flash时会让你同意他们的条款，选择OK即可（如果你只是把脚本扔进去就不管了最后不能用别找我）
-本脚本在dediserve和OVH提供的debian7 ×64模板上运行成功
+./dmUpload.sh -u username -p password -k api_key -s api_secret -c category [ -t "title" ] [ -l language ] video.mp4 [ tag,another tag ]
+###Options:
 
-特性：
-重启机器自动重启桌面和firefox，修改firefox即可全自动挂机
-如果安装好后连入VNC发现一片灰色，请关掉然后泡一杯咖啡耐心等待3分钟，如果还不行，reboot
+--help	Show this extremely helpful message.
+--multiple	Upload multiple videos
+To upload more than one video, run the program using the following syntax:
+
+./dmUpload.sh -u username -p password -k api_key -s api_secret -l language --multiple list1.txt list2.txt
+
+The text files must contain the following line for every video:
+
+"title" [ tag,another tag ] video.mp4 category
+
+If no title is specified, the filename (without extension) is used as title. Default language is english (en).
