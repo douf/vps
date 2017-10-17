@@ -3,6 +3,6 @@
 do 
   cd ~/Dropbox/IFTTT/YouTube/
     a=`tail -1 list.txt`
-    cd ~/Dropbox/IFTTT/
+    cd /root/Downloads/
     youtube-dl -f mp4 $a
 done
