@@ -1,2 +1,2 @@
 #!/bin/bash
-sh ./dmUpload.sh -u doudoufuk@yahoo.com.hk -p jl6639@@ -k 6bf483507ef62528ab3c -s f685b33ae21696c5ba1eabd40f93ed922a65ff3f -c TV 123.mp4
+sh ./dmUpload.sh -u moneyman10548@yahoo.com.hk -p aa29440099 -k 1fbb1d1ca972096cf95f -s 44105eb0968f60be5c403978fbd431f57ff07576 -c TV 123.mp4
