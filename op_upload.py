@@ -1,3 +1,4 @@
+import os
 from openload import OpenLoad
 
 login = os.environ.get('OPENLOAD_LOGIN')
